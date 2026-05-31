@@ -308,10 +308,10 @@ export default function Home() {
               <Image
                 src="/main-visual.png"
                 alt="GoogleMap MEO対策イメージ"
-                width={960}
-                height={720}
+                width={1200}
+                height={900}
                 priority
-                className="w-full h-auto max-w-[960px] select-none"
+                className="w-full h-auto max-w-[1200px] select-none"
                 style={{ mixBlendMode: 'screen', opacity: 0.93 }}
               />
             </div>
