@@ -3,11 +3,11 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "飲食店MEO対策サービス | ぷらたなすきかく",
-  description: "Googleマップで飲食店の集客を最大化。地域検索での上位表示を実現し、来店客数を増やすMEO対策サービス。ぷらたなすきかく株式会社が提供する飲食店専門のMEOコンサルティング。",
-  keywords: "MEO, MEO対策, 飲食店, Googleマップ, 集客, 上位表示, ぷらたなすきかく",
+  description: "ダイニングバー・居酒屋・カフェなど飲食店専門のMEO対策サービス。Googleマップで地域検索の上位に表示され、口コミを集客資産に変える仕組みを構築。広告に頼らず新規来店を増やしたい飲食店オーナーへ。",
+  keywords: "MEO, MEO対策, 飲食店, Googleマップ, 集客, 上位表示, 口コミ, ぷらたなすきかく",
   openGraph: {
     title: "飲食店MEO対策サービス | ぷらたなすきかく",
-    description: "Googleマップで飲食店の集客を最大化。地域検索での上位表示を実現します。",
+    description: "ダイニングバー・居酒屋・カフェなど飲食店専門のMEO対策。Googleマップ上位表示で新規来店を増やす仕組みを構築します。",
     type: "website",
     locale: "ja_JP",
   },
