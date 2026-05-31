@@ -234,8 +234,7 @@ export default function Home() {
 
               {/* メインコピー */}
               <h1 className="text-4xl md:text-5xl font-light text-white leading-tight mb-6 tracking-tight">
-                ダイニングバー・居酒屋・カフェ……<br />
-                <span style={{ color: '#3DBFB0' }}>Googleマップから</span><br />
+                ダイニングバー・居酒屋・カフェ……<span style={{ color: '#3DBFB0' }}>Googleマップから</span><br />
                 お客様を呼び込む。
               </h1>
 
@@ -309,10 +308,10 @@ export default function Home() {
               <Image
                 src="/main-visual.png"
                 alt="GoogleMap MEO対策イメージ"
-                width={780}
-                height={585}
+                width={960}
+                height={720}
                 priority
-                className="w-full h-auto max-w-[780px] select-none"
+                className="w-full h-auto max-w-[960px] select-none"
                 style={{ mixBlendMode: 'screen', opacity: 0.93 }}
               />
             </div>
