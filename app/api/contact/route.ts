@@ -2,7 +2,8 @@ import { NextRequest, NextResponse } from 'next/server';
 import { Resend } from 'resend';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
-const BUSINESS_EMAIL = 'info@platanus-p.com';
+const FROM_EMAIL = 'info@platanus-p.com';
+const NOTIFY_EMAIL = 'platanus.planning@gmail.com';
 
 export async function POST(req: NextRequest) {
   const body = await req.json();
@@ -15,8 +16,8 @@ export async function POST(req: NextRequest) {
   try {
     // 内部通知メール
     await resend.emails.send({
-      from: BUSINESS_EMAIL,
-      to: BUSINESS_EMAIL,
+      from: FROM_EMAIL,
+      to: NOTIFY_EMAIL,
       subject: `【新規お問い合わせ】${storeName}`,
       html: `
         <h2>新規無料相談のお申し込みがありました</h2>
@@ -32,7 +33,7 @@ export async function POST(req: NextRequest) {
 
     // お客様への自動返信メール
     await resend.emails.send({
-      from: BUSINESS_EMAIL,
+      from: FROM_EMAIL,
       to: email,
       subject: '【Platanus Planning】無料相談のお申し込みありがとうございます',
       html: `
@@ -50,7 +51,7 @@ export async function POST(req: NextRequest) {
         <p>─────────────────────</p>
         <br>
         <p>Platanus Planning</p>
-        <p>${BUSINESS_EMAIL}</p>
+        <p>${FROM_EMAIL}</p>
       `,
     });
 
