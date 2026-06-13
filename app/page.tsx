@@ -629,7 +629,9 @@ export default function Home() {
                 会社ホームページ
               </a>
               <a
-                href="#contact"
+                href="https://platanus-p.com/contact"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-xs tracking-wider transition-colors"
                 style={{ color: '#888' }}
                 onMouseEnter={(e) => (e.currentTarget.style.color = '#3DBFB0')}
