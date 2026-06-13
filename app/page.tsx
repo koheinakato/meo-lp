@@ -190,6 +190,15 @@ export default function Home() {
                 {item.label}
               </a>
             ))}
+            <a
+              href="https://meo.platanus-p.com/en/"
+              className="text-xs tracking-widest transition-colors"
+              style={{ color: '#888' }}
+              onMouseEnter={(e) => (e.currentTarget.style.color = '#3DBFB0')}
+              onMouseLeave={(e) => (e.currentTarget.style.color = '#888')}
+            >
+              English
+            </a>
           </nav>
           <a
             href="https://platanus-p.com/contact"
