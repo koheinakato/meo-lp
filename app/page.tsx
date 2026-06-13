@@ -211,24 +211,6 @@ export default function Home() {
             {/* Left: Text */}
             <div className="w-full md:w-[480px] flex-shrink-0 md:pr-8 z-10">
 
-              {/* 権威性バッジ */}
-              <div className="flex flex-wrap gap-2 mb-8">
-                {[
-                  { icon: '📍', text: 'MEO施策実績 100店舗以上' },
-                  { icon: '⭐', text: '顧客満足度 98%' },
-                  { icon: '🏆', text: 'MAP3達成率 82%' },
-                ].map((badge) => (
-                  <span
-                    key={badge.text}
-                    className="flex items-center gap-1.5 text-xs px-3 py-1.5 border font-medium"
-                    style={{ borderColor: '#3DBFB0', color: '#3DBFB0', backgroundColor: 'rgba(61,191,176,0.06)' }}
-                  >
-                    <span>{badge.icon}</span>
-                    {badge.text}
-                  </span>
-                ))}
-              </div>
-
               {/* 飲食店特化ラベル */}
               <p className="text-xs tracking-widest mb-4" style={{ color: '#666' }}>
                 飲食店特化 MAP ENGINE OPTIMIZATION
@@ -289,19 +271,6 @@ export default function Home() {
                 </a>
               </div>
 
-              {/* Stats */}
-              <div className="flex gap-10 border-t pt-8" style={{ borderColor: '#2e2e2e' }}>
-                {[
-                  { value: '100+', label: 'MEO施策実績（店舗）' },
-                  { value: '98%', label: '顧客満足度' },
-                  { value: '82%', label: 'MAP3達成率' },
-                ].map((stat, i) => (
-                  <div key={i}>
-                    <p className="text-3xl font-light mb-1" style={{ color: '#3DBFB0' }}>{stat.value}</p>
-                    <p className="text-xs tracking-wider" style={{ color: '#555' }}>{stat.label}</p>
-                  </div>
-                ))}
-              </div>
             </div>
 
             {/* Right: Image */}
