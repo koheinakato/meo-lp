@@ -169,7 +169,7 @@ export default function Home() {
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b" style={{ borderColor: '#E5E5E5' }}>
         <div className="max-w-5xl mx-auto px-6 h-14 flex items-center justify-between">
-          <a href="https://platanus-p.com/">
+          <a href="https://meo.platanus-p.com/">
             <Image src="/logo.webp" alt="ぷらたなすきかく" width={160} height={17} priority />
           </a>
           <nav className="hidden md:flex items-center gap-8">
@@ -613,7 +613,9 @@ export default function Home() {
         <div className="max-w-5xl mx-auto px-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
-              <Image src="/logo.webp" alt="ぷらたなすきかく" width={160} height={17} className="mb-1" />
+              <a href="https://platanus-p.com/">
+                <Image src="/logo.webp" alt="ぷらたなすきかく" width={160} height={17} className="mb-1" />
+              </a>
               <p className="text-xs" style={{ color: '#aaa' }}>Platanus Planning Co.</p>
             </div>
             <div className="flex items-center gap-8">
