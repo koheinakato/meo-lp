@@ -192,7 +192,9 @@ export default function Home() {
             ))}
           </nav>
           <a
-            href="#contact"
+            href="https://platanus-p.com/contact"
+            target="_blank"
+            rel="noopener noreferrer"
             className="hidden md:block text-xs tracking-widest px-5 py-2 text-white transition-opacity hover:opacity-80"
             style={{ backgroundColor: '#3DBFB0' }}
           >
@@ -262,7 +264,9 @@ export default function Home() {
               {/* CTAボタン */}
               <div className="flex flex-row gap-3 mb-12">
                 <a
-                  href="#contact"
+                  href="https://platanus-p.com/contact"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-block px-6 py-4 text-white text-sm tracking-wider text-center whitespace-nowrap transition-opacity hover:opacity-80"
                   style={{ backgroundColor: '#3DBFB0' }}
                 >
@@ -610,30 +614,6 @@ export default function Home() {
                     </li>
                   ))}
                 </ul>
-                <div className="px-8 pb-8">
-                  <a
-                    href="#contact"
-                    className="block text-center py-3 text-sm tracking-widest transition-colors"
-                    style={plan.recommended
-                      ? { backgroundColor: '#3DBFB0', color: '#fff' }
-                      : { border: '1px solid #3DBFB0', color: '#3DBFB0' }
-                    }
-                    onMouseEnter={(e) => {
-                      if (!plan.recommended) {
-                        e.currentTarget.style.backgroundColor = '#3DBFB0';
-                        e.currentTarget.style.color = '#fff';
-                      }
-                    }}
-                    onMouseLeave={(e) => {
-                      if (!plan.recommended) {
-                        e.currentTarget.style.backgroundColor = 'transparent';
-                        e.currentTarget.style.color = '#3DBFB0';
-                      }
-                    }}
-                  >
-                    このプランで相談する
-                  </a>
-                </div>
               </div>
             ))}
           </div>
