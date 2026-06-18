@@ -221,7 +221,7 @@ export default function Home() {
             <div className="w-full md:w-[480px] flex-shrink-0 md:pr-8 z-10">
 
               {/* 飲食店特化ラベル */}
-              <p className="text-xs tracking-widest mb-4" style={{ color: '#666' }}>
+              <p className="text-xs tracking-widest mb-4" style={{ color: '#aaa' }}>
                 飲食店特化 MAP ENGINE OPTIMIZATION
               </p>
 
@@ -235,7 +235,7 @@ export default function Home() {
                 飲食店に特化したMEO対策で、地域検索の上位表示を実現。<br />
                 来店し続ける集客資産を、専門家が構築します。
               </p>
-              <p className="text-sm leading-loose mb-8" style={{ color: '#555' }}>
+              <p className="text-sm leading-loose mb-8" style={{ color: '#bbb' }}>
                 広告は止めれば消える。レビューは積み上がり続ける。
               </p>
 
@@ -245,7 +245,7 @@ export default function Home() {
                   <span
                     key={tag}
                     className="text-xs px-3 py-1.5 border tracking-wide"
-                    style={{ borderColor: '#3a3a3a', color: '#777' }}
+                    style={{ borderColor: '#555', color: '#aaa' }}
                   >
                     {tag}
                   </span>
@@ -476,11 +476,11 @@ export default function Home() {
               ].map((item, i) => (
                 <div key={i}>
                   <p className="text-3xl font-light mb-2" style={{ color: '#3DBFB0' }}>{item.value}</p>
-                  <p className="text-xs" style={{ color: '#666' }}>{item.label}</p>
+                  <p className="text-xs" style={{ color: '#bbb' }}>{item.label}</p>
                 </div>
               ))}
             </div>
-            <p className="text-xs mt-8" style={{ color: '#555' }}>
+            <p className="text-xs mt-8" style={{ color: '#999' }}>
               ※ 上記は想定値です。立地・業態・既存レビュー数により実際の効果は異なります。
             </p>
           </div>
