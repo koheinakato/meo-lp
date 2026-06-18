@@ -220,7 +220,7 @@ export default function HomeEn() {
             <div className="w-full md:w-[480px] flex-shrink-0 md:pr-8 z-10">
 
               {/* Label */}
-              <p className="text-xs tracking-widest mb-4" style={{ color: '#666' }}>
+              <p className="text-xs tracking-widest mb-4" style={{ color: '#aaa' }}>
                 RESTAURANT-FOCUSED MAP ENGINE OPTIMIZATION
               </p>
 
@@ -235,7 +235,7 @@ export default function HomeEn() {
                 Restaurant-focused MEO services to reach the top of local search.<br />
                 We build a customer acquisition asset that keeps working for you.
               </p>
-              <p className="text-sm leading-loose mb-8" style={{ color: '#555' }}>
+              <p className="text-sm leading-loose mb-8" style={{ color: '#bbb' }}>
                 Ads stop when you stop paying. Reviews compound forever.
               </p>
 
@@ -245,7 +245,7 @@ export default function HomeEn() {
                   <span
                     key={tag}
                     className="text-xs px-3 py-1.5 border tracking-wide"
-                    style={{ borderColor: '#3a3a3a', color: '#777' }}
+                    style={{ borderColor: '#555', color: '#aaa' }}
                   >
                     {tag}
                   </span>
@@ -475,11 +475,11 @@ export default function HomeEn() {
               ].map((item, i) => (
                 <div key={i}>
                   <p className="text-3xl font-light mb-2" style={{ color: '#3DBFB0' }}>{item.value}</p>
-                  <p className="text-xs" style={{ color: '#666' }}>{item.label}</p>
+                  <p className="text-xs" style={{ color: '#bbb' }}>{item.label}</p>
                 </div>
               ))}
             </div>
-            <p className="text-xs mt-8" style={{ color: '#555' }}>
+            <p className="text-xs mt-8" style={{ color: '#999' }}>
               * Projected values. Actual results vary by location, category, and existing review count.
             </p>
           </div>
